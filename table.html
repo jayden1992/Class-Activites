@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <style>
+    table {
+      width: 100%;
+      /* background-color: rgb(240, 224, 203); */
+    }
+    table,th,td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 2px 4px;
+    }
+    td {
+      text-align: center;
+    }
+    table tr:nth-child(even){
+        background-color: coral;
+    }
+    table tr:nth-child(odd){
+        background-color: rgb(138, 115, 107);
+    }
+    th{
+        background-color: darkcyan;
+    }
+
+  </style>
+  <body>
+    <div>
+      <table>
+        <thead>
+          <!-- this is three columns
+                    <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th> -->
+          <!-- this is colspan -->
+          <th colspan="2">Name</th>
+          <th>Email</th>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- intial code 
+                <td>John</td>
+            <td >Smith</td>
+            <td>john@gmail.com</td> -->
+            <!-- rowspan -->
+            <td>John</td>
+            <td rowspan="2">Smith</td>
+            <td>john@gmail.com</td>
+          </tr>
+          <tr>
+            <!-- intial code
+            <td>Tom</td>
+            <td>Smith</td>
+            <td>Tom@gmail.com</td> -->
+            <!-- rowspan -->
+            <td>Tom</td>
+            <td>Tom@gmail.com</td>
+            
+          </tr>
+          <tr>
+            <td>Josh</td>
+            <td>Smith</td>
+            <td>josh@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Josh</td>
+            <td>Smith</td>
+            <td>josh@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
