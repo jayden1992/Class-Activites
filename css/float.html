@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .navbar{
+          background-color: rgb(32, 31, 31);
+      }
+      .navbar ul{
+          overflow: auto;
+      }
+      .navbar li{
+          float:left;
+          list-style: none;
+      }
+      .navbar li a{
+          color:rgb(255, 255, 255);
+          text-decoration: none;
+          margin:15px 5px;
+          padding:2px;
+             
+      }
+      .navbar li a:hover{
+          color:coral;
+      }
+      .container {
+        
+        border: 2px solid rgb(240, 119, 119);
+        width: 900px;
+        margin: 30px;
+        padding: 5px;
+      }
+      .fruits {
+        border: 2px solid rgb(122, 115, 228);
+        margin: 2px 0px;
+        padding: 5px;
+        background-color: rgb(230, 226, 170);
+      }
+      #apple {
+        float: right;
+        width: 50%;
+      }
+      #orange {
+        float: left;
+        width: 50%;
+      }
+      #kiwi {
+        clear: both;
+        width: 100%;
+      }
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+      }
+      .container2{
+          background-color: rgb(210, 233, 210);
+          border: 2px solid green;
+          margin: 30px;
+          padding: 5px;
+          height: 160px;
+      }
+      img{
+          float:right;
+          margin:5px;
+      }
+    </style>
+  </head>
+  <body>
+      <header>
+          <nav class="navbar"><ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact us</a></li>
+          </ul></nav>
+      </header>
+      <!-- section 1 practice float with three divs -->
+    <div class="container">
+      <div class="fruits" id="apple">
+        <h1>Apple</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          laboriosam commodi assumenda saepe nesciunt obcaecati vitae, tenetur
+          adipisci. Earum molestiae officiis optio nulla fuga praesentium dolore
+          laudantium, omnis animi repellendus.
+        </p>
+      </div>
+      <div class="fruits" id="orange">
+        <h1>Orange</h1>
+        <p>
+          Earum voluptatibus eius vel voluptatum delectus. Commodi, quod rem
+          nobis modi temporibus itaque doloribus impedit maiores rerum magni
+          magnam odio, molestias sapiente dolores omnis assumenda perspiciatis
+          ratione cupiditate. Quam, nesciunt.
+        </p>
+      </div>
+      <div class="fruits" id="kiwi">
+        <h1>Kiwi</h1>
+        <p>
+          Voluptatum repellat facere non eligendi itaque atque voluptas rem
+          consectetur hic minus possimus consequatur impedit, quam dolorem, ipsa
+          facilis neque? Dolore vero nobis inventore est aspernatur recusandae!
+          Repellendus, molestiae voluptatibus!
+        </p>
+      </div>
+    </div>
+    <!-- section 2 practice float with image -->
+    <div class="container2">
+      <h1>Fruit salad</h1>
+      <p>
+          <img src="https://source.unsplash.com/random/100x100" alt="random">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam animi
+        placeat accusamus delectus quo, provident eaque excepturi! Ex, odit
+        dolore.
+      </p>
+    </div>
+  </body>
+</html>
