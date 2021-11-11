@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Activity</title>
+</head>
+<style>
+    table,
+    td,
+    th {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    td {
+        text-align: center;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td rowspan="2" colspan="3">A</td>
+                    <td rowspan="2" colspan="4">B</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td colspan="7">C</td>
+
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td colspan="6" rowspan="2">D</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>F</td>
+                </tr>
+            </tbody>
+            </thead>
+        </table>
+    </div>
+
+</body>
+
+</html>
