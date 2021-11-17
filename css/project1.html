@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project</title>
+    <style>
+      /* reset CSS */
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url(bg1nature.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        /* shorthand property 
+          background: color, image source, repaet, attachment, position*/
+        /* gradient background */
+        /* background-image: linear-gradient(to bottom right, red,yellow); */
+
+        /* gradient with image */
+        /* background:linear-gradient(rgba(217, 212, 228, 0.2),rgba(255,35,67,0.2)), url(bg1nature.jpg); */
+      }
+
+      .myHeader {
+        background-color: darkslategray;
+        height: 13vh;
+        opacity: 0.7;
+        margin: 0px;
+      }
+      div {
+        /* border: 2px solid blueviolet; */
+        display: inline-block;
+      }
+      .left {
+        position: absolute;
+        left: 10px;
+        top: 3px;
+        /* background-color: cornflowerblue; */
+        text-align: center;
+      }
+      .left img {
+        width: 26px;
+        /* filter:invert(20%);  this is used to invert colors of your image*/
+      }
+
+      .mid {
+        /* background-color: darkkhaki; */
+        display: block;
+        margin: auto;
+        width: 45%;
+      }
+      .navbar li {
+        display: inline-block;
+      }
+      .navbar li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        display: block;
+      }
+      a:hover {
+        background-color: rgb(88, 94, 94);
+      }
+      .right {
+        /* background-color: rgb(235, 146, 154); */
+        float: right;
+        position: absolute;
+        right: 20px;
+        top: 3px;
+      }
+      button {
+        background-color: rgb(13, 34, 223);
+        border-radius: 5px;
+        color: white;
+        border: 2px solid orchid;
+        padding: 2px;
+        margin: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: rgb(88, 94, 94);
+      }
+      .right input[type="text"] {
+        background-color: paleturquoise;
+        color: black;
+        border-radius: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="myHeader">
+      <div class="left">
+        <img src="logo.jpg" alt="logo" />
+        <h3>My Website</h3>
+      </div>
+      <div class="mid">
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right">
+        <input type="text" placeholder="search.." />
+        <button>Call us</button>
+      </div>
+    </header>
+  </body>
+</html>
