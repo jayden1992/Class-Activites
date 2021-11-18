@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Area</title>
+    <style>
+      .container {
+        display: grid;
+        row-gap: 5px;
+        column-gap: 5px;
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section aside"
+          "footer footer footer footer";
+          /* if you want to leave it blank use period . */
+      }
+      #navbar {
+        grid-area: navbar;
+      }
+      #section {
+        grid-area: section;
+      }
+      #footer {
+        grid-area: footer;
+      }
+      .item{
+          border: 2px solid rgb(112, 131, 84);
+          background-color: khaki;
+          text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" id="navbar">home About Contact Services</div>
+      <div class="item" id="section">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+          itaque recusandae maiores necessitatibus labore consectetur, dolores
+          maxime. Tempora corrupti sint nemo fugiat placeat, consequuntur,
+          quaerat voluptas quisquam aperiam asperiores ab atque soluta aliquid
+          nesciunt velit possimus. Ex enim, neque, incidunt libero alias quam
+          cum velit itaque deserunt debitis veritatis illum magni. Excepturi
+          labore ab nesciunt tempore eligendi, distinctio provident accusamus
+          corporis numquam deserunt, sed ratione necessitatibus aliquam eveniet
+          quisquam fuga perspiciatis blanditiis! Odio, sint laboriosam iure
+          natus illum ducimus harum repellendus optio amet minima quaerat
+          accusamus ullam in ratione doloribus impedit nemo repudiandae aut illo
+          esse, expedita, voluptate a dicta!
+        </p>
+      </div>
+      <div class="item" id="aside">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod optio sed
+        tempore cupiditate eius quam ipsa, quasi expedita cumque unde.
+      </div>
+      <div class="item" id="footer"> &copy copyright reserved----</div>
+    </div>
+  </body>
+</html>

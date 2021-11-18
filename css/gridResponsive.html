@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid responsive</title>
+    <style>
+      .container {
+        display: grid;
+        row-gap: 5px;
+        column-gap: 5px;
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section aside"
+          "footer footer footer footer";
+      }
+      #navbar {
+        grid-area: navbar;
+      }
+      #section {
+        grid-area: section;
+      }
+      #aside {
+        grid-area: aside;
+      }
+      #footer {
+        grid-area: footer;
+      }
+      .item {
+        border: 2px solid green;
+        background-color: rgb(236, 154, 154);
+      }
+
+      /* mobile screen */
+      @media screen and (max-width: 300px) {
+        body {
+          background-color: lightgreen;
+        }
+        .container {
+          display: grid;
+          row-gap: 5px;
+          column-gap: 5px;
+          grid-template-areas:
+            "navbar"
+            "section"
+            "aside"
+            "footer";
+        }
+        span{
+            display:block;
+        }
+      }
+      /* tablet screen */
+      @media screen and (min-width: 300px) and (max-width: 500px) {
+        body {
+          background-color: rgb(128, 147, 207);
+        }
+      }
+      /* laptop screen */
+      @media screen and (min-width: 500px) and (max-width: 800px) {
+        body {
+          background-color: rgb(60, 209, 209);
+        }
+      }
+      /* large screen */
+      @media screen and (min-width: 800px) {
+        body {
+          background-color: rgb(219, 143, 57);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" id="navbar">
+          <span>home </span>
+           <span> about</span> 
+           <span>contact</span>
+        </div>
+      <div class="item" id="section">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+          recusandae nesciunt temporibus accusamus dolore ratione ipsam quod,
+          cumque facilis iusto, quaerat amet architecto, placeat et! Nam sequi
+          architecto culpa a, natus perspiciatis consequatur. Placeat
+          perferendis consectetur ipsum magni natus temporibus! Assumenda iusto
+          ullam voluptate maiores aut magnam deleniti deserunt voluptatem ex! At
+          accusantium unde, architecto nulla natus fugit quidem enim assumenda.
+          Voluptatibus iusto temporibus tenetur doloribus accusamus. Repudiandae
+          obcaecati minus accusantium voluptatum omnis, reprehenderit eos
+          debitis laborum reiciendis, assumenda magni sunt nihil soluta, veniam
+          ratione optio ipsa in ducimus laboriosam vitae! Maxime blanditiis
+          aperiam odit rem quae. Nemo, quos deserunt.
+        </p>
+      </div>
+      <div class="item" id="aside">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+        fugit!
+      </div>
+      <div class="item" id="footer">&copy copyright....</div>
+    </div>
+  </body>
+</html>
