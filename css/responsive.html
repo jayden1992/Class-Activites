@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsiveness</title>
+    <style>
+      body {
+        background-color: rgb(165, 159, 159);
+      }
+      .container {
+        display: flex;
+      }
+      /* ------ units----- */
+      /* em- relative to parent size 10em means = 10* parent size
+       rem- relative to root element and html is root element,
+       vh- viewport height
+       vw- viewport width
+       div{
+           font-size:4px;
+       }
+      h2{
+          font-size: 12px;
+          text-align: center;
+      }
+      /* #first{
+          font-size: 12em;
+      }
+      #second{
+          font-size: 12rem;
+      }
+      #third{
+          font-size:12vh;
+      }
+      #fourth{
+          font-size:12vw;
+      } */
+
+      /* ------ media queries------
+      @media mediatype and (width/feature){ write your css }*/
+
+      @media screen and (max-width: 400px) {
+        body {
+          background-color: rgb(199, 61, 61);
+        }
+
+        .container {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      @media screen and (min-width: 400px) and (max-width: 600px) {
+        body {
+          background-color: rgb(137, 121, 212);
+        }
+        .container {
+          display: flex;
+          flex-flow: wrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- I am div -->
+      <h2 id="first">This is my first heading</h2>
+      <h2 id="second">This is my Second heading</h2>
+      <h2 id="third">This is my third heading</h2>
+      <h2 id="fourth">This is my fourth heading</h2>
+    </div>
+  </body>
+</html>
