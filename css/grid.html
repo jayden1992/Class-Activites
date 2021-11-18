@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-basic</title>
+  </head>
+  <style>
+    * {
+      /* shortcut type m0 */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      /* intialise grid */
+      height: 300px;
+      width: 100%;
+      background-color: sandybrown;
+      display: grid;
+      /* specify how many rows and columns */
+      /* grid-template-columns:100px 100px 100px;; */
+      /* grid-template-columns: 1fr 2fr 1fr ; */
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: 1fr 2fr 1fr;
+      /* grid-auto-rows: 1fr;  this is used to set remaining rows and you can give values in fr and px or auto etc.*/
+
+      grid-gap: 5px;
+      /* horizontal and vertical alignment- values are left,right, auto , cneter, etc.. */
+      /* justify-content: center; */
+      /* align-items: center; */
+    }
+
+    .item {
+      /* height: 60px; */
+      /* width: 60px; */
+      border: 2px solid rebeccapurple;
+      margin: 3px;
+    }
+    #item1{
+        /* coulmnspan using line numbers */
+        grid-column-start: 1;
+        grid-column-end: 3;
+        /* grid-column: 1 / span 3; */
+        align-self: center;
+    }
+    #item3{
+           /* rowspan using line numbers */
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+  </style>
+  <body>
+    <!-- div.container>div.item*7 -->
+    <div class="container">
+      <div class="item" id="item1">item 1</div>
+      <div class="item">item 2</div>
+      <div class="item" id="item3">item 3</div>
+      <div class="item">item 4</div>
+      <div class="item">item 5</div>
+      <div class="item">item 6</div>
+      <div class="item">item 7</div>
+    </div>
+  </body>
+</html>
