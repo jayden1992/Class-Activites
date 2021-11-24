@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and operators</title>
+</head>
+<body>
+    
+
+    <script>
+//  name= Dipti
+// name=123 no
+// variable are used to store memory location
+
+var name;
+// var id or var studentId
+name="Dipti";
+age=123;
+console.log(name);
+console.log(typeof(name));
+console.log(typeof(age));
+isStudent= false;
+console.log(isStudent);
+//  operators
+ let x= 2;
+ let y= 3;
+//  let z= x+y;
+ console.log(x+y);
+ console.log(x-y);
+ console.log(x*y);
+ console.log(x/y);
+
+ //string property and methods
+ let course="  Web  Web Diploma  ";
+ console.log(course.length);
+ //slice method
+  console.log(course.slice(4,7));
+  console.log(course.substring(4,7));// cannot accept negative indexes
+  console.log(course.substr(4,7)); // the second parameter is a length
+  console.log(course.replace("Web", "Software")); // the second parameter is a length
+  console.log(course.replace(/web/i, "Software")); // ignores the case sensitivity
+  console.log(course.replace(/Web/g, "Software")); // the second parameter is a length
+  console.log(course.toLowerCase());
+  console.log(course.toUpperCase());
+  console.log(course.concat(" ", "level 5"));
+  console.log(course.trim());
+  // practice string search https://www.w3schools.com/js/js_string_search.asp
+
+    </script>
+</body>
+</html>

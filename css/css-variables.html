@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+</head>
+<style>
+    /* create a variable */
+    :root{
+        --primary-color:rgb(201, 89, 25);
+        --secondary-color:rgb(240, 203, 203);
+        --btn-color:green;
+        --txt-color:white;
+        --padding-btn: 10px;
+    }
+ 
+.item{
+    /* background-color: lightpink; */
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    width:80px;
+    height:80px;
+    margin:15px;
+}
+button{
+    background-color: var(--btn-color);
+    color: var(--txt-color);
+    padding: var(--padding-btn);
+}
+</style>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <button>Click me</button>
+    </div>
+
+
+</body>
+</html>

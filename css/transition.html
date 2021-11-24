@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <style>
+      .item {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: rgb(230, 230, 32);
+        text-align: center;
+        /* transition */
+        transition-property: background-color;
+        transition-duration: 4s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s;
+        border: 2px solid red;
+         /*shorthand - property name | duration | easing function | delay */
+
+      }
+      .item:hover{
+          background-color: lime;
+          height:150px;
+          width:150px;
+          border-radius:2px;
+          font-size:25px;
+      }
+      #item2{
+        height: 50px;
+        width: 50px;
+        background-color: royalblue;
+        color:white;
+        padding:20px;
+        font-size:12px;
+        margin:30px;
+      }
+      #item2:hover{
+          transform:rotate(45deg);
+          transform:scale(2);
+                
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">I am transitioning</div>
+      <div id="item2"> Transform me</div>
+    </div>
+  </body>
+</html>

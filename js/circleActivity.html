@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+    <style>
+        .circle{
+            height:60px;
+            width:60px;
+            border-radius: 50%;
+            border: 1px solid black;
+            margin:15px;
+        }
+        #first{
+            background-color: aqua;
+        }
+        #second{
+            background-color: rgb(40, 38, 129);
+        }
+        #third{
+            background-color: rgb(167, 32, 95);
+        }
+    </style>
+</head>
+<body>
+    <!-- create three circles with different colours -->
+ <div class="circle" id="first"></div>
+ <div class="circle" id="second"></div>
+ <div class="circle" id="third"></div>
+<script>
+
+    document.getElementById("first").onclick = function(){
+        document.getElementById("first").style.display ="none";
+    }
+    document.getElementById("second").onclick = function(){
+        document.getElementById("second").style.visibility ="hidden";
+    }
+    document.getElementById("third").onclick = function(){
+        document.getElementById("third").style.backgroundColor ="green";
+    }
+</script>
+
+</body>
+</html>
