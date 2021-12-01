@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <h1>Object- non primitive data type and it can hold mutiple values </h1>
+</body>
+<script>
+ let student= new Object();//empty object
+//  let student= {}; //another way of creating an empty object
+let student1={
+     name:"Tom",
+     age: 22,
+     course: "Web Diploma",
+     isStudent: true
+ };
+ document.write(student1['name']+ "<br>");
+ document.write(student1['age']+ "<br>");
+ document.write(student1.name+ "<br>");//another way of accessing property
+ let details=" ";
+ for(let x in student1){
+     details += student1[x] + " ";// x+= 1 is same as x= x+1'
+ }
+ document.write(details);
+
+</script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional Statement</title>
+  </head>
+  <body>
+    <h1>Learning if-else & switches</h1>
+    <p>x==y x is equals to y</p>
+    <p>x!=y x is not equals to y</p>
+    <!-- 4<5 -->
+    <p>x &lt x is less than y</p>
+    <!-- 4>2 -->
+    <p>x &gt x is greater than y</p>
+    <!-- 2<=3 we check two condition either less or equal-->
+    <!-- 2<2 this will be false that's why we use above condition -->
+    <p>x &lt= x is less than or equal to y</p>
+    <!-- 2<=3 we check two condition either greater or equal-->
+    <p>x &gt= x is greater than or equal to y</p>
+    <script>
+      let x = 5;
+      let y = 2;
+      //if block only get executed if the condition is true
+      if (x == y) {
+        document.write("x is equals to y " + x + " " + y + "<br>");
+      } else {
+        document.write("x is not equals to y" + "<br>");
+      }
+      if (x < y) {
+        document.write("x is less than y " + x + " " + y);
+      } else {
+      }
+      let trafficLight = "red";
+      let pass = true;
+      if (trafficLight == "orange") {
+        document.write("you can come to campus" + trafficLight);
+      } else if (pass) {
+        document.write("you can come to campus" + "because of pass");
+      }else{
+          document.write("you can not come to campus" +"<br>");
+      }
+      // shortcut for if-else statemnt using ternary operator condition? expression1: expression2
+   let z= x>y?"greater":"smaller";
+   document.write(z +"<br>");
+
+   //switch statement used to evallluate the expression
+    let coffee="mocha";
+    switch(coffee){
+        case "flat": document.write("pour flat white coffee");
+        break;
+        case "black":document.write("pour black coffee");
+        break;
+        case "latte":document.write("pour latte coffee");
+        break;
+        default:document.write("no coffee found ");
+    }
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loop</title>
+</head>
+
+<body>
+    <p>for, for-in, foreach, while, do-while</p>
+    <script>
+        // for(intialization; condition; increment)
+        for (let x = 0; x < 5; x++) {
+            document.write(x + "<br>");
+        }
+        //for in loop is used to access object properties or array's element
+        let student = { name: "Raj", age: 23, course: "Web Diploma" };
+        for (let x in student) {
+            document.write(x + " " + "=" + student[x] + "<br>");
+        }
+        //foreach used in array, Maps and Sets only
+        let fruits = ["orange", "apple", "kiwi"];
+        fruits.forEach((element) => {
+            document.write(element + " ");
+        });
+        // array with for loop
+        for (let x = 0; x < fruits.length; x++) {
+            document.write(fruits[x] + " " + "<br>");
+        }
+        let a = 5;
+        let b = 10;
+        while (a <= b) {
+            document.write(a + " " + "<br>");
+            a++;// a= a+1;
+        }
+        let c = 5;
+        let d = 10;
+        do {
+            document.write("this code block will get executed at least once even though the condition is false");
+            document.write(c + " " + "<br>");
+            c++;
+        }while (c > d);
+
+        // continue and break;
+    </script>
+</body>
+
+</html>
