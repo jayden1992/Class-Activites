@@ -7,11 +7,19 @@
     <title>Date </title>
 </head>
 <body>
+    <!-- hi -->
     <script>
         let myDate=  new Date();
         let myYear= new Date(2021);
+        let currentMonth =myDate.getMonth()+1;
         console.log(myDate);
-        console.log(myYear);
+        //console.log(myYear);
+        document.write(currentMonth +"<br>");
+        //get time
+        let currentHrs= myDate.getHours();
+        let currentMin= myDate.getMinutes();
+        document.write(currentHrs + ":" + currentMin);
+
     </script>
 </body>
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array- store multiple values in single variable</h1>
+</body>
+<script>
+
+    //two syntax
+    let myArray = new Array();//first way -empty array
+    let secondArray =[];// second way -empty array
+    // sedondArray[0]="firstelement"; add items in empty array
+    let fruits= ['apple','kiwi', 'tomato', 'pears','banana', 'orange'];
+    document.write(fruits + "<br>");
+    document.write(fruits[1]+ "<br>");
+    document.write(fruits[2]+ "<br>");
+    document.write(fruits.length+ "<br>");
+    document.write(fruits[fruits.length-1]+ "<br>");// print last element of the array
+    document.write(fruits.indexOf("banana")+ "<br>"); // returns the index of an element
+    document.write(fruits.sort()+ "<br>");
+    document.write(fruits.push("grapes")+ "<br>"); //add element at the end
+    document.write(fruits+ "<br>");
+    let popElement= fruits.pop();//pop method removes the last element and return its value
+    document.write(popElement+ "<br>");
+    document.write(fruits.shift()+ "<br>");// removes an element from the beginning of an array
+    // document.write(fruits+ "<br>");
+    document.write(fruits.unshift("mango")+ "<br>");// add an element at the beginning of the array
+    document.write(fruits+ "<br>");
+    document.write(fruits.splice(0,2)+ "<br>"); // splice can be used to add and reomve items from any position
+    document.write(fruits+ "<br>");
+</script>
+</html>
