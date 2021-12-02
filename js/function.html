@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <p>Functions are used to create a reusable code</p>
+    
+</body>
+<script>
+    let x=2;
+    let y=4;
+   // function name(parameters) { code to be executed}
+    function sum(){
+        
+    document.write (x+y +"<br>");
+    }
+    sum();
+    //function with parameter
+    function minus(a,b){
+        document.write(a-b +"<br>");
+    }
+    minus(4,3);
+//return value
+function multi(a,b){
+    return a*b;
+}
+let result = multi(7,6);
+document.write(result +"<br>");
+//local and global variables
+let text= "I am outside the function"// this is a global variable
+function showNumber(){
+    let text="I am inside function";//this is a local vaariable only available for this function
+    document.write(text+"<br>");
+}
+showNumber();
+document.write(text);
+
+</script>
+</html>

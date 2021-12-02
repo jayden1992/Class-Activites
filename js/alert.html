@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alert</title>
+  </head>
+  <body>
+    <p>Alert, confirm and prompt</p>
+    <form action="">
+      <input
+        type="button"
+        onClick="alert('you clicked on button')"
+        value="Click me"
+      />
+    </form>
+  </body>
+  <script>
+    // windows.alert("hello world");
+    // alert("hello world");
+    //confirm
+    // let choice= confirm("do you want to delete");
+    // document.write(choice);
+
+    //lets create a small function to understand confirm better
+
+    function externalLink() {
+      let result = confirm("do you want to go to google page");
+      if (result) {
+        window.location = "https://www.msn.com/";
+        // document.write("you decided to leave");
+      } else {
+        alert("thanks for staying back");
+      }
+    }
+  
+    externalLink(); // calling function
+    //prompt
+    let answer=prompt("how are you", "good");
+    document.write(answer);
+  </script>
+</html>

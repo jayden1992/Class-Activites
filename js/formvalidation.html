@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+</head>
+<style>
+  .container{
+    height: 300px;
+    width:400px;
+    background-color: antiquewhite;
+    margin-left:20%;
+    padding:20px;
+  }
+</style>
+<body>
+  <!-- div.container>form> -->
+  <div class="container">
+    <form action="">
+      <label for="username"> Username</label>
+        <input id="username" type="text" placeholder="Enter your username"></input> <br>
+        <label for="age"> Age</label>
+        <input id="age" type="text" placeholder="Enter your age"></input><br>
+        <label for="email"> email</label>
+        <input id="email" type="text" placeholder="Enter your email"></input><br>
+        <button onclick="return validateForm();">Submit</button>
+      </form>
+  </div>
+
+  <script>
+    function validateForm(){
+      let username =document.getElementById("username").value;
+      let age= document.getElementById("age").value;
+      let email= document.getElementById("email").value;
+      
+      let reg= /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+      // console.log(email);
+      if(username==""|| age==""|| email==""){
+        alert("please fill all fields");
+      }
+       if(isNaN(age)){
+        alert("enter digits only for age");
+      }
+      if(email.match(reg)){
+        return true;
+      }else{
+        alert("enter valid email id");
+        return false;
+      }
+     
+}
+
+    
+    
+  </script>
+</body>
+</html>
