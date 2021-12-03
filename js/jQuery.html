@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <style>
+        #firstPara{
+            background-color: aquamarine;
+        }
+        #secondPara{
+            background-color: rgb(122, 127, 199);
+        }
+        
+    </style>
+  </head>
+  <body>
+    <p id="firstPara">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, inventore.
+    </p>
+    <p id="secondPara">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, inventore.
+    </p>
+    <p class="para">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, inventore.
+      </p>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // console.log("learning jQuery");
+        // $("p").click(function(){
+        //     alert("you clicked on p");
+        // });
+
+        $("#firstPara").click(function(){
+            $("#secondPara").hide();
+            $(".para").show();
+        });
+        $("#secondPara").click(function(){
+            $(".para").hide();
+        });
+    });
+    </script>
+  </body>
+</html>
